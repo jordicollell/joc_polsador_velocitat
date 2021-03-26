@@ -1,9 +1,9 @@
 input.onPinPressed(TouchPin.P0, function () {
     comptador += 1
+    temps_final = input.runningTime()
     if (comptador == 1) {
         temps_inici = input.runningTime()
     }
-    temps_final = input.runningTime()
 })
 // Posar zero
 input.onButtonPressed(Button.A, function () {
@@ -12,8 +12,8 @@ input.onButtonPressed(Button.A, function () {
     temps_final = 0
 })
 let temps = 0
-let temps_final = 0
 let temps_inici = 0
+let temps_final = 0
 let comptador = 0
 comptador = 0
 basic.clearScreen()
